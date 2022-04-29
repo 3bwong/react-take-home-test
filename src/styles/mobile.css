@@ -1,0 +1,11 @@
+.JobItem {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .JobItem {
+        margin-bottom: 0;
+        flex: 1;
+    }
+}

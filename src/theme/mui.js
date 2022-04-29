@@ -92,7 +92,25 @@ const mui = createTheme({
           padding: "8px",
           color: colors.textLight,
         },
+        icon: {
+          color: colors.primary,
+        }
       },
+    },
+    MuiMenu: {
+      styleOverrides: {
+        list: {
+          backgroundColor: colors.secondaryVariant1,
+          color: colors.textLight,
+        }
+      }
+    },
+    MuiBackdrop: {
+      styleOverrides: {
+        root: {
+          background: "rgba(0, 0, 0, 0.8)"
+        }
+      }
     },
     MuiButton: {
       styleOverrides: {
