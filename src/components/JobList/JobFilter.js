@@ -9,19 +9,16 @@ export default class JobFilter extends React.Component {
 
         const locationChange = (event) => {
             const newValue = Object.assign(values, {location: event.target.value});
-            console.log(newValue)
             onChange(newValue);
         }
 
         const teamChange = (event) => {
             const newValue = Object.assign(values, {team: event.target.value});
-            console.log(newValue)
             onChange(newValue);
         }
 
         const commitmentChange = (event) => {
             const newValue = Object.assign(values, {commitment: event.target.value});
-            console.log(newValue)
             onChange(newValue);
         }
 
