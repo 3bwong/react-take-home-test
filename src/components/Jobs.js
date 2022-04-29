@@ -66,7 +66,7 @@ function Jobs() {
     }, [setJobs]);
 
     const grouping = (options, active) => {
-        if(options.length > 2) {
+        if (options.length > 2) {
             const teamJobs = options.slice(1).map(team => ({ team: team, jobList: [] }));
             active.forEach(job => {
                 const index = teamJobs.findIndex(team => job.categories.team === team.team);
@@ -91,7 +91,11 @@ function Jobs() {
 
     return (
         <Box sx={{ marginTop: "80px" }}>
-            {isLoading && (<CircularProgress />)}
+            {isLoading && (
+                <Box sx={{ textAlign: "center" }}>
+                    <CircularProgress />
+                </Box>
+            )}
             {!isLoading && (
                 <JobFilter options={filterOpts} values={filter} onChange={handleChange} />
             )}
